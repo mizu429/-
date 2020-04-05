@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="nameCSS.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".reset").click(function(){
+        $(this.form).find(":text").val("");
+        });
+    });
+    </script>
+    <script src="mysteriousiland.js"></script>
+    <title>パーク暗記</title>
+</head>
+<body>
+<h1>パーク暗記クイズ　東京ディズニーシー版</h1><br>  
+    <div>
+        <span id="mondai"></span>
+        <br>
+        <form action="" method="post">
+            <input type="text" id='input_answer' value="" style="width:600px" autocomplete="off"><br>
+            <input type="button" id="answer_button" value="回答！">
+            <input type="button" value="リセット" class="reset">
+            <input type="button" id="next_question" value="次の問題へ">
+            </form>
+    </div>
+    <img src="sea.png">
+    <span id="result"></span>
+</body>
+</html>
